@@ -2,5 +2,4 @@
 This is the project for Modern Web 2017
 This is the master branch
 
-Local Development Branch
 
