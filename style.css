@@ -4,12 +4,49 @@
 	margin: 0;
 	padding: 0;
 }
-section {
-	width: 1190px;  
-	margin: 0 auto; 
-	overflow: auto; 
+@media only screen and (min-width: 20em) {
+	/* phone */
+	section {
+		width: 100%;  
+	}
+	.courseGoalsList li:nth-child(n+1) {
+		clear: left;
+	}
+	.courseGoalsList li { 
+		width: 95%; 
+		margin: 5px; 
+		padding: 5px;
+	}
 }
-
+@media only screen and (min-width: 48em) {
+	/* tablet */
+	section {
+		width: 100%;  
+	}
+	.courseGoalsList li:nth-child(2n+1) {
+		clear: left;
+	}
+	.courseGoalsList li { 
+		width: 45%; 
+		margin: 5px; 
+		padding: 5px;
+	}
+}
+@media only screen and (min-width: 62.5em) {
+	/* desktop,etc */
+	section {
+		width: 1190px;  
+		margin: 0 auto; 
+	}
+	.courseGoalsList li:nth-child(3n+1) {
+		clear: left;
+	}
+	.courseGoalsList li { 
+		width: 295px; 
+		margin: 5px; 
+		padding: 5px;
+	}
+}
 .topSection { 
 	background-image: url('images/hero.jpg');
 	height: 640px;
@@ -86,15 +123,6 @@ nav a {
 	text-align: center;
 }
 
-.courseGoalsList li:nth-child(3n+1) {
-	clear: left;
-}
-
-.courseGoalsList li { 
-	width: 295px; 
-	margin: 5px; 
-	padding: 5px;
-}
 
 .courseGoalsList p { 
 	font-size: 18px;
