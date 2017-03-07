@@ -4,6 +4,22 @@
 	margin: 0;
 	padding: 0;
 }
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("fonts/Roboto-Thin.ttf");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("fonts/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("fonts/Roboto-Bold.ttf");
+}
 section {
 	width: 1190px;  
 	margin: 0 auto; 
@@ -39,21 +55,23 @@ nav li {
 }
 
 nav a { 
+	font-family: "Roboto-Medium";
 	text-decoration: none; 
 	font-size: 18px; 
 	color: #fff;
+	line-height: 21px;
 }
 
 .mainHeader { 
-	font-family: Roboto-Thin; 
+	font-family: "Roboto-Thin"; 
 	font-size: 92px; 
-	line: 107px; 
+	line-height: 107px; 
 	color: #fff; 
-	text-align:center; 
-	margin-bottom: 0;
+	text-align:center;
 }
 
 .classDates { 
+	font-family: "Roboto-Light";
 	font-size: 24px; 
 	color: #fff; 
 	text-align: center; 
@@ -67,38 +85,64 @@ nav a {
 	margin: 10px auto;
 	width: 45px;
 	height: 30px;
-	background-image: url('images/divider.png');
+	background-image: url('images/divider.svg');
 	background-position: center;
 	background-repeat: no-repeat;
 }
 .introText {
+	font-family: "Roboto-Light";
 	color: #C3BFBF;
 	font-size: 32px;
 	text-align: center;
-	margin: 150px auto 0;
+	margin: 0 auto;
+	margin-top: 150px;
 	width: 844px;
 	padding: 20px;
 }
+.introText::after {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	margin-top: 77px;
+	margin-bottom: 127px;
+	width: 556px;
+	height: 30px;
+	background-image: url('images/divider.svg');
+	background-repeat: no-repeat;
+}
 .courseGoalsHeadline {
+	font-family: "Roboto-Medium";
 	color: #777;
 	font-size: 28px;
 	text-transform:uppercase;
 	text-align: center;
+	margin-bottom: 69px;
+}
+
+.courseGoalsList li { 
+	font-family: "Roboto-Bold";
+	color: #777;
+	font-size: 16px;
+	line-height: 18px;
+	width: 295px; 
+	margin-right: 53px; 
+	margin-bottom: 101px;
+	padding: 5px;
 }
 
 .courseGoalsList li:nth-child(3n+1) {
 	clear: left;
+	margin-left: 55px;
 }
 
-.courseGoalsList li { 
-	width: 295px; 
-	margin: 5px; 
-	padding: 5px;
+.courseGoalsList li:nth-child(3n+3) {
+	margin-right: 53px;
 }
 
 .courseGoalsList p { 
 	font-size: 18px;
 }
+.colearnersSection { margin-top: 49px;}
 
 .colearnersSection header h1 { 
 	text-transform:uppercase;
