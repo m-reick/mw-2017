@@ -1,0 +1,60 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+	li {
+		float: left;
+	}
+}
+
+/* phone */
+@media only screen and (max-width: 20em) {
+	section, .courseGoalsList {
+		width: 100%;
+	}
+
+	.courseGoalsList li {
+		width: 100%;
+		margin: 0px;
+		padding: 5px;
+    &:nth-child(n+1) {
+  		clear: left;
+  	}
+	}
+}
+
+/* tablet */
+@media only screen and (max-width: 48em) {
+	section, .courseGoalsList {
+		width: 100%;
+	}
+	.courseGoalsList li:nth-child(2n+1) {
+		clear: left;
+	}
+	.courseGoalsList li {
+		width: 45%;
+		margin: 5px;
+		padding: 5px;
+	}
+}
+
+/* desktop,etc */
+@media only screen and (min-width: 48em) {
+	section {
+		width: 1190px;
+		margin: 0 auto;
+		overflow: auto;
+	}
+	.courseGoalsList li:nth-child(3n+1) {
+		clear: left;
+	}
+	.courseGoalsList li {
+		width: 250px;
+		margin: 5px;
+		padding: 5px;
+	}
+}

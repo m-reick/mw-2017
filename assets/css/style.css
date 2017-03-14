@@ -1,46 +1,36 @@
 /* Variables */
+/*-------------------------------------------
+	Clearfix
+-------------------------------------------*/
+/*-------------------------------------------
+	Media Queries
+-------------------------------------------*/
+/*
+	Personal Usage Note:
+	max-down always ends with #.999 or #.#999 >> so 47.999em instead of 48em
+	min-up is always a whole number >> 48em
+	to avoid overlapping/overriding styles
+*/
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
-.topSection {
-  background-image: url("../../images/hero.jpg");
-  height: 640px; }
-
-.mainLogo {
-  margin-left: 34px;
-  margin-top: 18px; }
-
 ul {
   list-style: none; }
-
-ul li {
-  float: left; }
-
-nav {
-  float: right;
-  margin-top: 35px;
-  margin-right: 35px; }
-
-nav li {
-  margin: 28px; }
-
-nav a {
-  text-decoration: none;
-  font-size: 18px;
-  color: #fff; }
+  ul li {
+    float: left; }
 
 /* phone */
 @media only screen and (max-width: 20em) {
   section, .courseGoalsList {
     width: 100%; }
-  .courseGoalsList li:nth-child(n+1) {
-    clear: left; }
   .courseGoalsList li {
     width: 100%;
     margin: 0px;
-    padding: 5px; } }
+    padding: 5px; }
+    .courseGoalsList li:nth-child(n+1) {
+      clear: left; } }
 
 /* tablet */
 @media only screen and (max-width: 48em) {
@@ -66,10 +56,31 @@ nav a {
     margin: 5px;
     padding: 5px; } }
 
+.topSection {
+  background-image: url("../../images/hero.jpg");
+  height: 640px; }
+
+.mainLogo {
+  margin-left: 34px;
+  margin-top: 18px; }
+
+nav {
+  float: right;
+  margin-top: 35px;
+  margin-right: 35px; }
+
+nav li {
+  margin: 28px; }
+
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff; }
+
 .mainHeader {
-  font-family: Robot-Thin, Helvetica, sans-serif;
+  font-family: "Robot-Thin", Helvetica, Arial, sans-serif;
   font-size: 92px;
-  line: 107px;
+  line-height: 107px;
   color: #fff;
   text-align: center;
   margin-bottom: 0; }
@@ -98,6 +109,23 @@ nav a {
   margin: 150px auto 0;
   width: 844px;
   padding: 20px; }
+
+.classDates {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 22px; }
+
+.classDates::after {
+  content: "";
+  display: block;
+  margin: 10px auto;
+  width: 45px;
+  height: 30px;
+  background-image: url("../../images/divider.png");
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .courseGoalsHeadline {
   color: #777;

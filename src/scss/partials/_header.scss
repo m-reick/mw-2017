@@ -1,0 +1,53 @@
+.topSection {
+	background-image: url('../../images/hero.jpg');
+	height: 640px;
+}
+
+.mainLogo {
+	margin-left: 34px;
+	margin-top: 18px;
+}
+
+nav {
+	float: right;
+	margin-top: 35px;
+	margin-right: 35px;
+}
+
+nav li {
+	margin: 28px;
+}
+
+nav a {
+	text-decoration: none;
+	font-size: 18px;
+	color: $navigationTextColor;
+}
+
+.mainHeader {
+	font-family:$robotoThin;
+	font-size: 92px;
+	line-height: 107px;
+	color: $mainHeaderTextColor;
+	text-align:center;
+	margin-bottom: 0;
+}
+
+.classDates {
+	font-size: 24px;
+	color: $classDatesTextColor;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 22px;
+}
+
+.classDates::after {
+	content: "";
+	display: block;
+	margin: 10px auto;
+	width: 45px;
+	height: 30px;
+	background-image: url('../../images/divider.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
