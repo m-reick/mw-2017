@@ -110,23 +110,6 @@ nav a {
   width: 844px;
   padding: 20px; }
 
-.classDates {
-  font-size: 24px;
-  color: #fff;
-  text-align: center;
-  margin-top: 5px;
-  margin-bottom: 22px; }
-
-.classDates::after {
-  content: "";
-  display: block;
-  margin: 10px auto;
-  width: 45px;
-  height: 30px;
-  background-image: url("../../images/divider.png");
-  background-position: center;
-  background-repeat: no-repeat; }
-
 .courseGoalsHeadline {
   color: #777;
   font-size: 28px;
@@ -156,20 +139,6 @@ nav a {
   position: relative;
   bottom: 0; }
 
-.imageWrapper {
-  width: 200px;
-  margin: 0 auto; }
-
-.embeddedVideo {
-  padding: 0;
-  width: 640px;
-  margin: 0 auto; }
-
-.instructorBio {
-  width: 50%;
-  position: relative;
-  left: 0; }
-
 .socialMediaLinks {
   width: 200px;
   margin: 0 auto;
@@ -196,3 +165,32 @@ nav a {
 
 .linkedin {
   background-position: -104px 2px; }
+
+.instructorBio {
+  width: 50%;
+  position: relative;
+  left: 0; }
+
+.instructorBioSection {
+  color: #fff;
+  background-image: url("../../images/instructor.jpg");
+  height: 701px; }
+
+.quoteSection {
+  height: 626px; }
+  .quoteSectionblockquote {
+    width: 903px;
+    margin: 0 auto; }
+
+.footerSection {
+  color: #fff;
+  background-image: url("../../images/footer.jpg");
+  height: 672px; }
+
+/*
+.embeddedVideo {
+	padding: 0;
+	width: 640px;
+	margin: 0 auto;
+}
+*/

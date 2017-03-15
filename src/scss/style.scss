@@ -4,6 +4,7 @@ $mainHeaderTextColor: #fff;
 $classDatesTextColor: #fff;
 $introTextColor: #C3BFBF;
 $courseGoalsTextColor: #777;
+$instructorBioTextColor: #fff;
 
 // partials
 @import 'partials/_fonts';
@@ -14,6 +15,8 @@ $courseGoalsTextColor: #777;
 @import 'partials/_courseGoalsSection';
 @import 'partials/_coLearnersSection';
 @import 'partials/_instructorBioSection';
+@import 'partials/_quoteSection';
+@import 'partials/_footer';
 
 /*
 .embeddedVideo {
