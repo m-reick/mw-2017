@@ -85,12 +85,17 @@ ul {
     width: 1190px;
     margin: 0 auto;
     overflow: auto; }
-  .courseGoalsList li:nth-child(3n+1) {
-    clear: left; }
   .courseGoalsList li {
-    width: 250px;
-    margin: 5px;
-    padding: 5px; } }
+    width: 324px;
+    margin: 0px 53px 101px 0px;
+    padding: 5px; }
+    .courseGoalsList li:nth-child(3n+3) {
+      margin-right: 55px; }
+    .courseGoalsList li:nth-child(3n+1) {
+      margin-left: 55px;
+      clear: left; }
+    .courseGoalsList li:last-child {
+      margin-bottom: 155px; } }
 
 .topSection {
   background-image: url("../../images/hero.jpg");
@@ -157,12 +162,23 @@ nav {
 
 .courseGoalsHeadline {
   color: #777;
+  font-family: "robotoMedium", Helvetica, Arial, sans-serif;
   font-size: 28px;
+  line-height: 33px;
   text-transform: uppercase;
   text-align: center; }
 
-.courseGoalsList p {
-  font-size: 18px; }
+.courseGoalsList {
+  color: #777; }
+  .courseGoalsList p {
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "robotoRegular", Helvetica, Arial, sans-serif; }
+  .courseGoalsList h2 {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-family: "robotoBold", Helvetica, Arial, sans-serif; }
 
 .colearnersSection header h1 {
   text-transform: uppercase; }

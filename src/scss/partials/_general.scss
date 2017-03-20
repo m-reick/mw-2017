@@ -49,12 +49,22 @@ ul {
 		margin: 0 auto;
 		overflow: auto;
 	}
-	.courseGoalsList li:nth-child(3n+1) {
-		clear: left;
-	}
 	.courseGoalsList li {
-		width: 250px;
-		margin: 5px;
+		width: 324px;
+		margin: 0px 53px 101px 0px;
 		padding: 5px;
+		&:nth-child(3n+3) {
+			// last column
+			margin-right: 55px;
+		}
+		&:nth-child(3n+1) {
+			// first column
+			margin-left: 55px;
+			clear: left;
+		}
+		&:last-child {
+			// last item to set bottom margin
+			margin-bottom: 155px;
+		}
 	}
 }
