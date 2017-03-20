@@ -20,6 +20,7 @@ nav li {
 
 nav a {
 	text-decoration: none;
+	font-family: $robotoMedium;
 	font-size: 18px;
 	color: $navigationTextColor;
 }
@@ -36,6 +37,7 @@ nav a {
 .classDates {
 	font-size: 24px;
 	color: $classDatesTextColor;
+	font-family: $robotoLight;
 	text-align: center;
 	margin-top: 5px;
 	margin-bottom: 22px;

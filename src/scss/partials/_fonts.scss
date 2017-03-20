@@ -1,1 +1,66 @@
-$robotoThin: "Robot-Thin", Helvetica, Arial, sans-serif;
+@font-face {
+    font-family: 'robotoBold';
+    src: url('/fonts/robotoBold.woff2') format('woff2'),
+         url('/fonts/robotoBold.woff') format('woff'),
+         url('/fonts/robotoBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+$robotoBold: "robotoBold", Helvetica, Arial, sans-serif;
+
+@font-face {
+    font-family: 'robotoLight';
+    src: url('/fonts/robotoLight.woff2') format('woff2'),
+         url('/fonts/robotoLight.woff') format('woff'),
+         url('/fonts/robotoLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+$robotoLight: "robotoLight", Helvetica, Arial, sans-serif;
+
+@font-face {
+    font-family: 'robotoLightItalic';
+    src: url('/fonts/robotoLightItalic-webfont.woff2') format('woff2'),
+         url('/fonts/robotoLightItalic.woff') format('woff'),
+         url('/fonts/robotoLightItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+$robotoLightItalic: "robotoLightItalic", Helvetica, Arial, sans-serif;
+
+@font-face {
+    font-family: 'robotoMedium';
+    src: url('/fonts/robotoMedium.woff2') format('woff2'),
+         url('/fonts/robotoMedium.woff') format('woff'),
+         url('/fonts/robotoMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+$robotoMedium: "robotoMedium", Helvetica, Arial, sans-serif;
+
+@font-face {
+    font-family: 'robotoRegular';
+    src: url('/fonts/robotoRegular.woff2') format('woff2'),
+         url('/fonts/robotoRegular.woff') format('woff'),
+         url('/fonts/robotoRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+$robotoRegular: "robotoRegular", Helvetica, Arial, sans-serif;
+
+@font-face {
+    font-family: 'robotoThin';
+    src: url('/fonts/robotoThin.woff2') format('woff2'),
+         url('/fonts/robotoThin.woff') format('woff'),
+         url('/fonts/robotoThin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$robotoThin: "robotoThin", Helvetica, Arial, sans-serif;

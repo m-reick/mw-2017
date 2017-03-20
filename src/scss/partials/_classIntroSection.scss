@@ -1,8 +1,19 @@
 .introText {
 	color: $introTextColor;
+	font-family: $robotoLight;
 	font-size: 32px;
 	text-align: center;
 	margin: 150px auto 0;
 	width: 844px;
 	padding: 20px;
+	&::after {
+		content: "";
+		display: block;
+		margin: 77px auto 127px;
+		width: 100%;
+		height: 30px;
+		background-image: url('../../images/divider.png');
+		background-position: center;
+		background-repeat: no-repeat;
+	}
 }

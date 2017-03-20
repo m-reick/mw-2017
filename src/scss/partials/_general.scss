@@ -12,7 +12,7 @@ ul {
 }
 
 /* phone */
-@media only screen and (max-width: 20em) {
+@include max-down(20em) {
 	section, .courseGoalsList {
 		width: 100%;
 	}
@@ -28,7 +28,7 @@ ul {
 }
 
 /* tablet */
-@media only screen and (max-width: 48em) {
+@include min-max(24em, 48em) {
 	section, .courseGoalsList {
 		width: 100%;
 	}
@@ -43,7 +43,7 @@ ul {
 }
 
 /* desktop,etc */
-@media only screen and (min-width: 48em) {
+@include min-up(48em) {
 	section {
 		width: 1190px;
 		margin: 0 auto;

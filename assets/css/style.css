@@ -1,4 +1,40 @@
-/* Variables */
+@font-face {}/* Variables */
+@font-face {
+  font-family: 'robotoBold';
+  src: url("/fonts/robotoBold.woff2") format("woff2"), url("/fonts/robotoBold.woff") format("woff"), url("/fonts/robotoBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotoLight';
+  src: url("/fonts/robotoLight.woff2") format("woff2"), url("/fonts/robotoLight.woff") format("woff"), url("/fonts/robotoLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotoLightItalic';
+  src: url("/fonts/robotoLightItalic-webfont.woff2") format("woff2"), url("/fonts/robotoLightItalic.woff") format("woff"), url("/fonts/robotoLightItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotoMedium';
+  src: url("/fonts/robotoMedium.woff2") format("woff2"), url("/fonts/robotoMedium.woff") format("woff"), url("/fonts/robotoMedium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotoRegular';
+  src: url("/fonts/robotoRegular.woff2") format("woff2"), url("/fonts/robotoRegular.woff") format("woff"), url("/fonts/robotoRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotoThin';
+  src: url("/fonts/robotoThin.woff2") format("woff2"), url("/fonts/robotoThin.woff") format("woff"), url("/fonts/robotoThin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 /*-------------------------------------------
 	Clearfix
 -------------------------------------------*/
@@ -33,7 +69,7 @@ ul {
       clear: left; } }
 
 /* tablet */
-@media only screen and (max-width: 48em) {
+@media only screen and (min-width: 24em) and (max-width: 48em) {
   section, .courseGoalsList {
     width: 100%; }
   .courseGoalsList li:nth-child(2n+1) {
@@ -74,11 +110,12 @@ nav li {
 
 nav a {
   text-decoration: none;
+  font-family: "robotoMedium", Helvetica, Arial, sans-serif;
   font-size: 18px;
   color: #fff; }
 
 .mainHeader {
-  font-family: "Robot-Thin", Helvetica, Arial, sans-serif;
+  font-family: "robotoThin", Helvetica, Arial, sans-serif;
   font-size: 92px;
   line-height: 107px;
   color: #fff;
@@ -88,6 +125,7 @@ nav a {
 .classDates {
   font-size: 24px;
   color: #fff;
+  font-family: "robotoLight", Helvetica, Arial, sans-serif;
   text-align: center;
   margin-top: 5px;
   margin-bottom: 22px; }
@@ -104,11 +142,21 @@ nav a {
 
 .introText {
   color: #C3BFBF;
+  font-family: "robotoLight", Helvetica, Arial, sans-serif;
   font-size: 32px;
   text-align: center;
   margin: 150px auto 0;
   width: 844px;
   padding: 20px; }
+  .introText::after {
+    content: "";
+    display: block;
+    margin: 77px auto 127px;
+    width: 100%;
+    height: 30px;
+    background-image: url("../../images/divider.png");
+    background-position: center;
+    background-repeat: no-repeat; }
 
 .courseGoalsHeadline {
   color: #777;
