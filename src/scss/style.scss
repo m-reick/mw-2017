@@ -1,7 +1,3 @@
-@font-face {
-
-}
-
 /* Variables */
 $navigationTextColor: #fff;
 $mainHeaderTextColor: #fff;
@@ -9,6 +5,8 @@ $classDatesTextColor: #fff;
 $introTextColor: #C3BFBF;
 $courseGoalsTextColor: #777;
 $instructorBioTextColor: #fff;
+$topHeroBackgroundImage: '../../images/hero.jpg';
+$dividerImage: '../../images/divider.png';
 
 // partials
 @import 'partials/_fonts';

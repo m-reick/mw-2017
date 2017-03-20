@@ -1,4 +1,4 @@
-@font-face {}/* Variables */
+/* Variables */
 @font-face {
   font-family: 'robotoBold';
   src: url("/fonts/robotoBold.woff2") format("woff2"), url("/fonts/robotoBold.woff") format("woff"), url("/fonts/robotoBold.ttf") format("truetype");
@@ -104,15 +104,13 @@ nav {
   float: right;
   margin-top: 35px;
   margin-right: 35px; }
-
-nav li {
-  margin: 28px; }
-
-nav a {
-  text-decoration: none;
-  font-family: "robotoMedium", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  color: #fff; }
+  nav li {
+    margin: 28px; }
+  nav a {
+    text-decoration: none;
+    font-family: "robotoMedium", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    color: #fff; }
 
 .mainHeader {
   font-family: "robotoThin", Helvetica, Arial, sans-serif;
@@ -129,16 +127,15 @@ nav a {
   text-align: center;
   margin-top: 5px;
   margin-bottom: 22px; }
-
-.classDates::after {
-  content: "";
-  display: block;
-  margin: 10px auto;
-  width: 45px;
-  height: 30px;
-  background-image: url("../../images/divider.png");
-  background-position: center;
-  background-repeat: no-repeat; }
+  .classDates::after {
+    content: "";
+    display: block;
+    margin: 10px auto;
+    width: 45px;
+    height: 30px;
+    background-image: url("../../images/divider.png");
+    background-position: center;
+    background-repeat: no-repeat; }
 
 .introText {
   color: #C3BFBF;

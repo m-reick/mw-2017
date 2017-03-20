@@ -1,5 +1,5 @@
 .topSection {
-	background-image: url('../../images/hero.jpg');
+	background-image: url($topHeroBackgroundImage);
 	height: 640px;
 }
 
@@ -12,17 +12,15 @@ nav {
 	float: right;
 	margin-top: 35px;
 	margin-right: 35px;
-}
-
-nav li {
-	margin: 28px;
-}
-
-nav a {
-	text-decoration: none;
-	font-family: $robotoMedium;
-	font-size: 18px;
-	color: $navigationTextColor;
+	li {
+		margin: 28px;
+	}
+	a {
+		text-decoration: none;
+		font-family: $robotoMedium;
+		font-size: 18px;
+		color: $navigationTextColor;
+	}
 }
 
 .mainHeader {
@@ -41,15 +39,14 @@ nav a {
 	text-align: center;
 	margin-top: 5px;
 	margin-bottom: 22px;
-}
-
-.classDates::after {
-	content: "";
-	display: block;
-	margin: 10px auto;
-	width: 45px;
-	height: 30px;
-	background-image: url('../../images/divider.png');
-	background-position: center;
-	background-repeat: no-repeat;
+	&::after {
+		content: "";
+		display: block;
+		margin: 10px auto;
+		width: 45px;
+		height: 30px;
+		background-image: url($dividerImage);
+		background-position: center;
+		background-repeat: no-repeat;
+	}
 }
