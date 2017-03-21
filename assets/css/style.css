@@ -287,6 +287,27 @@ nav {
   color: #fff;
   background-image: url("../../images/footer.jpg");
   height: 672px; }
+  .footerSection .classDetails {
+    float: left;
+    width: 595px;
+    margin: 141px auto 0px;
+    color: #fff;
+    font-family: "robotoLight", Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    line-height: 45px;
+    padding-left: 92px; }
+  .footerSection > a:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .footerSection footer {
+    border: 1px solid red;
+    height: 126px;
+    bottom: 0; }
+    .footerSection footer > a {
+      float: left;
+      margin-left: 32px;
+      margin-bottom: 33px; }
 
 /*
 .embeddedVideo {

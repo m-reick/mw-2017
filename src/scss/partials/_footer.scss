@@ -1,5 +1,31 @@
 .footerSection {
   color: $instructorBioTextColor;
-	background-image: url('../../images/footer.jpg');
+	background-image: url($footerHeroImage);
 	height: 672px;
+  & .classDetails {
+    float: left;
+    width: 595px;
+    margin: 141px auto 0px;
+    color: $footerTextColor;
+    font-family: $robotoLight;
+    font-size: 36px;
+    line-height: 45px;
+    padding-left: 92px;
+
+  }
+  & > a {
+@include clearfix();
+  }
+  & footer {
+    border: 1px solid red;
+    height: 126px;
+    bottom: 0;
+    & > a {
+      float: left;
+      margin-left: 32px;
+      margin-bottom: 33px;
+    }
+    & > address {
+    }
+  }
 }
