@@ -232,15 +232,34 @@ nav {
   .socialMediaLinks > li.linkedin {
     background-position: -104px 2px; }
 
-.instructorBio {
-  width: 50%;
-  position: relative;
-  left: 0; }
-
 .instructorBioSection {
   color: #fff;
   background-image: url("../../images/instructor.jpg");
   height: 701px; }
+
+.instructorBio {
+  width: 33%;
+  position: relative;
+  left: 100px; }
+  .instructorBio > h2 {
+    margin-top: 208px;
+    margin-bottom: 15px;
+    font-family: "robotoLight", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 53px; }
+  .instructorBio > h1 {
+    font-family: "robotoMedium", Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    line-height: 42px; }
+  .instructorBio > p {
+    font-size: 20px;
+    font-family: "robotoRegular", Helvetica, Arial, sans-serif;
+    line-height: 25px; }
+  .instructorBio > p:first-Of-Type {
+    margin-top: 10px;
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 27px; }
 
 .quoteSection {
   height: 626px; }

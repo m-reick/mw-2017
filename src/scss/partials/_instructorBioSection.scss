@@ -1,10 +1,34 @@
-.instructorBio {
-	width: 50%;
-	position: relative;
-	left: 0;
-}
 .instructorBioSection {
   color: $instructorBioTextColor;
-	background-image: url('../../images/instructor.jpg');
+	background-image: url($instructorBioHeroImage);
 	height: 701px;
+}
+
+.instructorBio {
+	width: 33%;
+	position: relative;
+	left: 100px;
+	& > h2 {
+		margin-top: 208px;
+		margin-bottom: 15px;
+		font-family: $robotoLight;
+		font-size: 18px;
+		line-height: 53px;
+	}
+	& > h1 {
+		font-family: $robotoMedium;
+		font-size: 36px;
+		line-height: 42px;
+	}
+	& > p {
+		font-size: 20px;
+		font-family: $robotoRegular;
+		line-height: 25px;
+	}
+	& > p:first-Of-Type {
+		margin-top: 10px;
+		font-size: 22px;
+		line-height: 22px;
+		margin-bottom: 27px;
+	}
 }
