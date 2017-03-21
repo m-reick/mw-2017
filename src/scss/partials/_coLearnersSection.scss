@@ -1,49 +1,50 @@
 .colearnersSection header h1 {
-	text-transform:uppercase;
-}
-.colearnersSection li:nth-child(4n+1) {
-	clear: left;
-}
-.colearnersList li {
-	width: 220px;
-	height: 300px;
-	margin: 5px;
-	padding: 5px;
+		text-transform:uppercase;
+		text-align: center;
+		font-size: 28px;
+		line-height: 53px;
+		color: $meetTheColearnersTextColor;
+		font-family: $robotoMedium;
 }
 
-.colearnersList li h2 {
+
+
+.colearnersList > li h2 {
 	text-align: center;
-	font-size: 1rem;
+	color: $meetTheColearnersTextColor;
+	font-family: $robotoMedium;
+	font-size: 22px;
+	line-height: 25px;
+}
+.colearnersList img {
+	border-radius: 100%;
 }
 
-.colearnersList li i {
-	position: relative;
-	bottom: 0;
+.socialMediaLinks {
+	margin: 0 auto;
+	display: inline;
+	text-align: center;
 }
-
-.socialMediaLinks { width: 200px; margin: 0 auto; display: block;}
 .socialMediaLinks > li {
   display: inline-block;
+	margin: 9px;
   width: 22px;
   height: 20px;
-  background-image: url("../../images/slice.png");
+  background-image: url($socialMediaSliceImage);
   background-repeat: no-repeat;
   text-indent: 100%;
   white-space: no-wrap;
   overflow: hidden;
-}
-.twitter {
-  background-position: 1px 2px;
-}
-
-.facebook {
-  background-position: -33px 2px;
-}
-
-.dribble {
-  background-position: -69px 2px;
-}
-
-.linkedin {
-  background-position: -104px 2px;
+	&.twitter {
+	  background-position: 1px 2px;
+	}
+	&.facebook {
+	  background-position: -33px 2px;
+	}
+	&.dribble {
+	  background-position: -69px 2px;
+	}
+	&.linkedin {
+	  background-position: -104px 2px;
+	}
 }

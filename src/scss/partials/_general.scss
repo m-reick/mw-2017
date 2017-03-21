@@ -67,4 +67,21 @@ ul {
 			margin-bottom: 155px;
 		}
 	}
+	.colearnersList > li {
+		width: 224px;
+		margin: 35px 21px;
+		&:nth-child(4n+4) {
+			// last column
+			margin-right: 84px;
+		}
+		&:nth-child(4n+1) {
+			// first column
+			margin-left: 84px;
+			clear: left;
+		}
+		&:last-child {
+			// last item to set bottom margin
+			margin-bottom: 135px;
+		}
+	}
 }
