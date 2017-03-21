@@ -16,6 +16,7 @@ $dividerImage: '../../images/divider.png';
 $footerHeroImage: '../../images/footer.jpg';
 
 // partials
+@import 'partials/_normalize';
 @import 'partials/_fonts';
 @import 'partials/_mixins';
 @import 'partials/_general';
