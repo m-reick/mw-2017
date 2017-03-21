@@ -262,10 +262,26 @@ nav {
     margin-bottom: 27px; }
 
 .quoteSection {
-  height: 626px; }
-  .quoteSectionblockquote {
+  height: 626px;
+  font-family: "robotoMedium", Helvetica, Arial, sans-serif;
+  color: #aaa;
+  text-align: center; }
+  .quoteSection > blockquote {
     width: 903px;
     margin: 0 auto; }
+    .quoteSection > blockquote > p {
+      margin-top: 170px;
+      margin-bottom: 0px;
+      font-family: "robotoLightItalic", Helvetica, Arial, sans-serif;
+      font-size: 48px;
+      line-height: 64px;
+      color: #E66244; }
+    .quoteSection > blockquote > h1 {
+      margin-top: 74px;
+      font-size: 22px; }
+    .quoteSection > blockquote > h2 {
+      font-size: 16px;
+      line-height: 24px; }
 
 .footerSection {
   color: #fff;
