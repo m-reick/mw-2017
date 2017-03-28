@@ -47,7 +47,7 @@ ul {
 /* desktop,etc */
 @include min-up(48em) {
 	section {
-		width: 1190px;
+		max-width: 1190px;
 		margin: 0 auto;
 		@include clearfix();
 	}
@@ -72,9 +72,8 @@ ul {
 		}
 	}
 	.colearnersList > li {
-		width: 225px;
+		width: calc(25% - 74px);
 		margin: 35px 21px;
-		border: 1px solid red;
 		&:nth-child(4n+4) {
 			// last column
 			margin-right: 84px;

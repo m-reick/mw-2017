@@ -56,17 +56,21 @@
 	// unset
 	@if $val == 'none' {
 	    top: auto;
-      -webkit-transform: none;
-         -moz-transform: none;
-          -ms-transform: none;
-              transform: none;
+      transform: none;
 
    	} @else {
         position: relative;
         top: $val;
-        -webkit-transform: translateY(-50%);
-           -moz-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
+        transform: translateY(-50%);
    	}
+}
+
+/*-------------------------------------------
+	Hide Text
+-------------------------------------------*/
+@mixin hide-text {
+	display: block; 	// always needed
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
 }

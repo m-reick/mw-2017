@@ -7,8 +7,6 @@
 		font-family: $robotoMedium;
 }
 
-
-
 .colearnersList > li h2 {
 	text-align: center;
 	color: $meetTheColearnersTextColor;
@@ -18,17 +16,18 @@
 }
 .colearnersList img {
 	border-radius: 100%;
+	width: 100%
 }
 
 .socialMediaLinks {
-	margin: 0 auto;
-	display: inline;
+	width: 100%;
+	display: inline-block;
 	text-align: center;
 }
 .socialMediaLinks > li {
   display: inline-block;
-	margin: 9px;
-  width: 22px;
+	margin: 0 auto;
+  width: calc(25% - 20px);
   height: 20px;
   background-image: url($socialMediaSliceImage);
   background-repeat: no-repeat;
