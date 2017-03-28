@@ -30,7 +30,7 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('default', ['sass', 'browser-sync'],function() {
+gulp.task('default', ['sass'/*, 'browser-sync'*/],function() {
   gulp.watch(['src/scss/*', 'src/scss/**/*'], ['sass']);
-  gulp.watch('*.html').on('change', browserSync.reload);
+  // gulp.watch('*.html').on('change', browserSync.reload);
 });

@@ -15,6 +15,7 @@ ul {
 @include max-down(20em) {
 	section, .courseGoalsList {
 		width: 100%;
+		@include clearfix();
 	}
 
 	.courseGoalsList li {
@@ -31,6 +32,7 @@ ul {
 @include min-max(24em, 48em) {
 	section, .courseGoalsList {
 		width: 100%;
+		@include clearfix();
 	}
 	.courseGoalsList li:nth-child(2n+1) {
 		clear: left;
@@ -47,29 +49,32 @@ ul {
 	section {
 		width: 1190px;
 		margin: 0 auto;
-		overflow: auto;
+		@include clearfix();
 	}
-	.courseGoalsList li {
-		width: 324px;
-		margin: 0px 53px 101px 0px;
-		padding: 5px;
-		&:nth-child(3n+3) {
-			// last column
-			margin-right: 55px;
-		}
-		&:nth-child(3n+1) {
-			// first column
-			margin-left: 55px;
-			clear: left;
-		}
-		&:last-child {
-			// last item to set bottom margin
-			margin-bottom: 155px;
+	.courseGoalsList {
+		& li {
+			width: 324px;
+			margin: 0px 53px 101px 0px;
+			padding: 5px;
+			&:nth-child(3n+3) {
+				// last column
+				margin-right: 55px;
+			}
+			&:nth-child(3n+1) {
+				// first column
+				margin-left: 55px;
+				clear: left;
+			}
+			&:last-child {
+				// last item to set bottom margin
+				margin-bottom: 155px;
+			}
 		}
 	}
 	.colearnersList > li {
-		width: 224px;
+		width: 225px;
 		margin: 35px 21px;
+		border: 1px solid red;
 		&:nth-child(4n+4) {
 			// last column
 			margin-right: 84px;
