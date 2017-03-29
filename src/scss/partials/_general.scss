@@ -5,7 +5,7 @@
 }
 
 ul {
-	list-style: none;
+	@include list-reset();
 	li {
 		float: left;
 	}
@@ -42,6 +42,23 @@ ul {
 		margin: 5px;
 		padding: 5px;
 	}
+	.colearnersList > li {
+		width: calc(50% - 74px);
+		margin: 35px 21px;
+		&:nth-child(2n+2) {
+			// last column
+			margin-right: 84px;
+		}
+		&:nth-child(2n+1) {
+			// first column
+			margin-left: 84px;
+			clear: left;
+		}
+		&:last-child {
+			// last item to set bottom margin
+			margin-bottom: 135px;
+		}
+	}
 }
 
 /* desktop,etc */
@@ -53,7 +70,7 @@ ul {
 	}
 	.courseGoalsList {
 		& li {
-			width: 324px;
+			width: calc(33% - 72px);
 			margin: 0px 53px 101px 0px;
 			padding: 5px;
 			&:nth-child(3n+3) {
