@@ -2,30 +2,51 @@
   color: $instructorBioTextColor;
 	background-image: url($footerHeroImage);
 	height: 672px;
+  & article {
+    height: 546px;
+    @include clearfix();
+    & > a {
+      @include vertical-align();
+      width: 50%;
+      display: block;
+      width: 327px;
+      height: 98px;
+      color: #fff;
+      font-size: 29.9px;
+      padding: 20px;
+      font-family:  $robotoBold;
+      border: 2px solid #fff;
+    }
+  }
   & .classDetails {
     float: left;
-    width: 595px;
+    width: 50%;
     margin: 141px auto 0px;
     color: $footerTextColor;
     font-family: $robotoLight;
     font-size: 36px;
     line-height: 45px;
     padding-left: 92px;
+    & p.extraMargin {
+      margin-bottom: 20px;
+    }
+  }
 
-  }
-  & > a {
-@include clearfix();
-  }
   & footer {
-    border: 1px solid red;
-    height: 126px;
-    bottom: 0;
+    height: $footerHeight;
+    margin: auto;
+    margin-bottom: 0;
     & > a {
       float: left;
       margin-left: 32px;
       margin-bottom: 33px;
+      margin-right: 20px;
     }
     & > address {
+      @include vertical-align();
+      font-size: 14px;
+      line-height: 16px;
+      font-family: $robotoRegular;
     }
   }
 }
