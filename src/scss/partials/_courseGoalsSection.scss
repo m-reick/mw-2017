@@ -9,7 +9,12 @@
 
 
 .courseGoalsList {
+	@include clearfix;
+  @include list-reset;
 	color: $courseGoalsTextColor;
+	& li {
+		float: left;
+	}
 	& p {
 		font-size: 16px;
 		line-height: 18px;

@@ -3,5 +3,4 @@ var body   = document.querySelector('body');
 
 menuBtn.addEventListener('click', function() {
   body.classList.toggle('nav-shown');
-  console.log('barf');
 });
