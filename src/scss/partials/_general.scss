@@ -89,7 +89,7 @@ ul {
 		}
 	}
 	.colearnersList > li {
-		width: calc(25% - 74px);
+		width: calc(100%/6);
 		margin: 35px 21px;
 		&:nth-child(4n+4) {
 			// last column
