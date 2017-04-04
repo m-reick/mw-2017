@@ -8,21 +8,75 @@
 	margin-top: 18px;
 }
 
+// nav {
+// 	float: right;
+// 	margin-top: 35px;
+// 	margin-right: 35px;
+// 	li {
+// 		margin: 28px;
+// 	}
+// 	a {
+// 		text-decoration: none;
+// 		font-family: $robotoMedium;
+// 		font-size: 18px;
+// 		color: $navigationTextColor;
+// 	}
+// }
 nav {
-	float: right;
-	margin-top: 35px;
-	margin-right: 35px;
-	li {
-		margin: 28px;
-	}
-	a {
-		text-decoration: none;
-		font-family: $robotoMedium;
-		font-size: 18px;
-		color: $navigationTextColor;
-	}
+  @include clearfix;
+  position: absolute;
+  bottom: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.33);
+  transform: translateY(0%);
+  transition: transform 0.25s ease-out;
+
+  // JS button adds/removes this class
+  .nav-shown & {
+    transform: translateY(100%);
+  }
+
+  @include min-up($navSwitchWidth) {
+		width: calc(100% - 191px);
+    position: relative;
+		float: right;
+		top: 35px;
+		right: 35px;
+    transform: translateY(0%) !important; // always reset on larger screens
+    transition: none; // override transition between break points
+    padding: 2rem;
+    background-color: transparent;
+  }
 }
 
+.mainNav {
+	@include clearfix;
+  @include list-reset;
+
+  @include min-up($navSwitchWidth) {
+      float: right;
+  }
+
+  li {
+    display: block;
+    margin: 2rem;
+    text-align: center;
+
+    @include min-up($navSwitchWidth) {
+      float: left;
+      margin: 0 1rem;
+    }
+  }
+
+  a {
+    display: inline-block;
+    font-family: $robotoMedium;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+  }
+}
 //
 // --- Menu Button --------------------------
 //

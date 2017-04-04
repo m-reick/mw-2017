@@ -4,12 +4,12 @@
 	padding: 0;
 }
 
-ul {
-	@include list-reset();
-	li {
-		float: left;
-	}
-}
+// ul {
+// 	@include list-reset();
+// 	li {
+// 		float: left;
+// 	}
+// }
 
 /* phone */
 @include max-down(20em) {
