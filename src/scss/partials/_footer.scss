@@ -5,48 +5,54 @@
   & article {
     height: 546px;
     @include clearfix();
-    & > a {
-      @include vertical-align();
-      width: 50%;
-      display: block;
-      width: 327px;
-      height: 98px;
-      color: #fff;
-      font-size: 29.9px;
-      padding: 20px;
-      font-family:  $robotoBold;
-      border: 2px solid #fff;
-    }
-  }
-  & .classDetails {
-    float: left;
-    width: 50%;
-    margin: 141px auto 0px;
-    color: $footerTextColor;
-    font-family: $robotoLight;
-    font-size: 36px;
-    line-height: 45px;
-    padding-left: 92px;
-    & p.extraMargin {
-      margin-bottom: 20px;
-    }
-  }
-
-  & footer {
-    height: $footerHeight;
-    margin: auto;
-    margin-bottom: 0;
-    & > a {
+    & .classDetails {
       float: left;
-      margin-left: 32px;
-      margin-bottom: 33px;
-      margin-right: 20px;
+      width: 50%;
+      height: 546px;
+      margin: 141px auto 0px;
+      color: $footerTextColor;
+      font-family: $robotoLight;
+      font-size: 36px;
+      line-height: 45px;
+      padding-left: 92px;
+      & p.extraMargin {
+        margin-bottom: 20px;
+      }
     }
-    & > address {
-      @include vertical-align();
-      font-size: 14px;
-      line-height: 16px;
-      font-family: $robotoRegular;
+    & .CTAContainer {
+      width: 50%;
+      float: right;
+      height: 546px;
+      & > a {
+        @include vertical-align();
+        display: block;
+        text-align: center;
+        width: 327px;
+        height: 98px;
+        color: #fff;
+        font-size: 29.9px;
+        padding: 20px;
+        font-family:  $robotoBold;
+        border: 2px solid #fff;
+      }
+    }
+    & footer {
+      height: $footerHeight;
+      margin: auto;
+      margin-bottom: 0;
+      text-align: left;
+      & > a {
+        float: left;
+        margin-left: 32px;
+        margin-bottom: 33px;
+        margin-right: 20px;
+      }
+      & > address {
+        @include vertical-align();
+        font-size: 14px;
+        line-height: 16px;
+        font-family: $robotoRegular;
+      }
+    }
     }
   }
-}
